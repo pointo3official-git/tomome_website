@@ -5,6 +5,7 @@ import PartnerOrbit from './components/PartnerOrbit';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import HowTomomeWorks from './components/How';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Hero />
       <Programs />
       <PartnerOrbit />
+      <HowTomomeWorks/>
       <Pricing />
       <Testimonials />
       <Footer />

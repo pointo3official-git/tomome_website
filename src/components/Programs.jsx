@@ -42,7 +42,7 @@ const programs = [
       'Unlimited Chat support',
       'DIY Activities',
     ],
-    button: 'Coming Soon',
+    button: 'Coming Soon...',
     href: '#',
     disabled: true,
     highlighted: false,

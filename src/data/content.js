@@ -4,7 +4,7 @@
 // ---------------------------------------------------------------------------
 
 export const brand = {
-  name: "Ivyra",
+  name: "Tomome",
 };
 
 export const nav = {
@@ -82,14 +82,14 @@ export const partners = {
   paragraph:
     "Built with inspiration from the world's leading wellness, mindfulness, and women's health experiences to support a more thoughtful pregnancy journey.",
   icons: [
-    "heart",
-    "shield",
-    "sparkles",
-    "sun",
-    "droplet",
-    "leaf",
-    "flame",
-    "circle-dot",
+    "yoga",
+    "birth_class",
+    "medical support",
+    "nutrition",
+    // "droplet",
+    // "leaf",
+    // "flame",
+    // "circle-dot",
   ],
 };
 
