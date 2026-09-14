@@ -394,7 +394,7 @@ export default function PartnerOrbit() {
               "
             >
               <img
-                src="/tomomo-logo.png"
+                src="logos/tomomo-logo.png"
                 alt="Tomome"
                 className="
                   h-auto

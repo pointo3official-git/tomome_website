@@ -9,7 +9,7 @@ const programs = [
     description:
       'Dedicated support to help you feel prepared, confident, and cared for throughout pregnancy.',
     image:
-      '/public/womb-care.jfif',
+      'section/womb-care.jfif',
     imageAlt: 'Mother and baby',
     features: [
       'Prepare for birthing',
@@ -32,7 +32,7 @@ const programs = [
     description:
       'Ongoing support for the next chapter, helping you feel more confident as you step into parenthood.',
     image:
-      '/public/parenting.jfif',
+      'section/parenting.jfif',
     imageAlt: 'Parent and child',
     features: [
       'Prepare for parenting',
@@ -60,9 +60,9 @@ export default function Programs() {
         bg-white
         px-4
         py-20
-        sm:px-6
-        sm:py-24
-        lg:py-28
+        sm:px-5
+        sm:py-10
+        lg:py-16
       "
     >
       <div className="mx-auto w-full max-w-6xl">

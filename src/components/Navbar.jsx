@@ -17,7 +17,7 @@ export default function Navbar() {
         {/* Logo - left. Swap the src below for your uploaded Tomomo mark */}
         <a href="#home" className="z-10 flex shrink-0 items-center">
           <img
-            src="/tomomo-logo.png"
+            src="logos/tomomo-logo.png"
             alt={brand?.name ?? 'Tomomo'}
             className="h-10 w-auto sm:h-15"
           />

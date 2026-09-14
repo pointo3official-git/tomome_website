@@ -12,10 +12,10 @@ export default function App() {
     <div className="min-h-screen bg-cream font-sans text-ink">
       <Navbar />
       <Hero />
-      <Programs />
       <PartnerOrbit />
+      <Programs />
       <HowTomomeWorks/>
-      <Pricing />
+      {/* <Pricing /> */}
       <Testimonials />
       <Footer />
     </div>

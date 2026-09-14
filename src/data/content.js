@@ -22,7 +22,7 @@ export const hero = {
   heading2: "Support for every day of pregnancy.",
   primaryCta: "Book Free Demo",
   secondaryCta: "Start Journey",
-  heroImage: "/public/hero.png",
+  heroImage: "section/hero.png",
   floatingCards: {
     chat: {
       name: `Angana`,
