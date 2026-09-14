@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Check } from 'lucide-react';
-import { pricing } from '../data/content';
+import { pricing } from '../../data/content';
 
 export default function Pricing() {
   return (

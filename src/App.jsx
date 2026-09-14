@@ -1,11 +1,11 @@
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Programs from './components/Programs';
-import PartnerOrbit from './components/PartnerOrbit';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import HowTomomeWorks from './components/How';
+import Hero from './components/home/Hero';
+import Programs from './components/home/Programs';
+import PartnerOrbit from './components/home/PartnerOrbit';
+import Pricing from './components/home/Pricing';
+import Testimonials from './components/home/Testimonials';
+import HowTomomeWorks from './components/home/How';
 
 export default function App() {
   return (

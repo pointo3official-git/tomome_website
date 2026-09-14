@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { MessageCircle } from 'lucide-react';
-import { hero } from '../data/content';
+import { hero } from '../../data/content';
 
 /* ------------------------------------------------------------------ */
 /* Floating animation                                                  */
