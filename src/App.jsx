@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
+import NotFound from "./components/NotFound";
 
 export default function App() {
   return (
@@ -7,7 +8,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       {/* <Route path="/driver/*" element={<DriverRoutes />} />
         <Route path="/admin/*" element={<AdminRoutes />} /> */}
-      {/* <Route path="*" element={<NotFound />} /> */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

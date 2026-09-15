@@ -50,8 +50,8 @@ export default function Footer() {
           <div className="flex flex-wrap gap-4">
             <a href="#home" className="z-10 flex shrink-0 items-center">
               <img
-                src="logos/tomomo-logo.png"
-                alt={brand?.name ?? "Tomomo"}
+                src="logos/tomome-logo.png"
+                alt={brand?.name ?? "Tomome"}
                 className="h-10 w-auto sm:h-15"
               />
             </a>

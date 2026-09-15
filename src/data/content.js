@@ -50,10 +50,10 @@ export const testimonialsSection = {
 
 export const nav = {
   links: [
-    { label: "Home", href: "#home", active: true },
-    { label: "Program", href: "#Program" },
-    { label: "About", href: "#About" },
-    { label: "Contacts", href: "#contact" },
+    { label: "Home", href: "/", active: true },
+    { label: "Program", href: "/program" },
+    { label: "About", href: "/about" },
+    { label: "Contacts", href: "/contact" },
   ],
   cta: "Download",
 };

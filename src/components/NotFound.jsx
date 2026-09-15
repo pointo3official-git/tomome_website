@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { brand, nav } from '../data/content';
 
-export default function Navbar() {
+export default function NotFound() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,11 +14,11 @@ export default function Navbar() {
       className="fixed inset-x-0 top-0 z-50  px-4 py-4 shadow-sm backdrop-blur-sm sm:px-6 sm:py-5"
     >
       <div className="relative mx-auto flex max-w-6xl items-center justify-between">
-        {/* Logo - left. Swap the src below for your uploaded Tomome mark */}
+        {/* Logo - left. Swap the src below for your uploaded Tomomo mark */}
         <a href="#home" className="z-10 flex shrink-0 items-center">
           <img
-            src="logos/tomome-logo.png"
-            alt={brand?.name ?? 'Tomome'}
+            src="logos/tomomo-logo.png"
+            alt={brand?.name ?? 'Tomomo'}
             className="h-10 w-auto sm:h-15"
           />
         </a>
