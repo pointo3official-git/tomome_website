@@ -15,7 +15,7 @@ export default function HomePage() {
       <Programs />
       <HowTomomeWorks />
       {/* <Pricing /> */}
-      <Testimonials />
+      <Testimonials />  
       <Footer />
     </div>
   );

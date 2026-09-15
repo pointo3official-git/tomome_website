@@ -7,12 +7,6 @@ export const testimonialsSection = {
   heading: "The support women lean on between appointments",
   paragraph:
     "Routine antenatal visits are essential for medical care. Tomome adds the ongoing education, preparation, wellness support, and day-to-day guidance many women need between those visits.",
-  avatarStack: [
-    "/feedbacks/avatar-1.jpg",
-    "/feedbacks/avatar-2.jpg",
-    "/feedbacks/avatar-3.jpg",
-  ],
-  reviewCount: "4.9/5 from 300+ mothers",
   feedbacks: [
     {
       image: "feedbacks/feedbacks1.jpeg",
@@ -44,7 +38,7 @@ export const testimonialsSection = {
       category: "birth-stories",
       alt: "Birth story feedback from a Tomome mother6",
     },
-    // ...one entry per screenshot
+    
   ],
 };
 
@@ -168,89 +162,8 @@ export const pricing = {
   ],
 };
 
-// export const testimonialsSection = {
-//   eyebrow: "FOR EVERY STAGE",
-//   heading: ">1000 of mothers are capturing their journey with Ivyra",
-//   paragraph:
-//     "From simple memory keeping to personalized AI guidance and wellness insights, Ivyra offers flexible plans designed to support every stage of pregnancy.",
-//   reviewCount: "1,023 reviews",
-//   avatarStack: [
-//     "https://randomuser.me/api/portraits/women/12.jpg",
-//     "https://randomuser.me/api/portraits/women/32.jpg",
-//     "https://randomuser.me/api/portraits/women/45.jpg",
-//     "https://randomuser.me/api/portraits/men/22.jpg",
-//   ],
-//   testimonials: [
-//     {
-//       quote:
-//         "My favorite part is voice memories. I know these moments will mean everything later.",
-//       name: "Olivia Morgans",
-//       meta: "Week 24",
-//       avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-//     },
-//     {
-//       quote:
-//         "I never thought I\u2019d want to remember the small everyday moments this much. It made me feel more present and meaningful.",
-//       name: "Sofia Durtwood",
-//       meta: "First-time mom",
-//       avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-//     },
-//     {
-//       quote:
-//         "The AI reflections honestly surprised me. Some days it felt like someone truly understood what I was going through emotionally.",
-//       name: "Emma Corbyn",
-//       meta: "Week 31",
-//       avatar: "https://randomuser.me/api/portraits/women/26.jpg",
-//     },
-//     {
-//       quote:
-//         "The weekly summaries keep my partner in the loop even when he can\u2019t make appointments.",
-//       name: "Priya Nandan",
-//       meta: "Week 18",
-//       avatar: "https://randomuser.me/api/portraits/women/56.jpg",
-//     },
-//     {
-//       quote:
-//         "Simple, calm, and genuinely useful. It doesn\u2019t feel like just another tracking app.",
-//       name: "Hannah Reyes",
-//       meta: "Second pregnancy",
-//       avatar: "https://randomuser.me/api/portraits/women/71.jpg",
-//     },
-//   ],
-// };
-
-// export const footer = {
-//   columns: [
-//     {
-//       title: null,
-//       links: ["Home", "Pricing & Plans"],
-//     },
-//     {
-//       title: null,
-//       links: ["Features", "Download app"],
-//     },
-//     {
-//       title: null,
-//       links: ["Our team", "Partnership"],
-//     },
-//   ],
-//   contact: {
-//     heading: "Get thoughtful pregnancy insights from Ivyra AI app",
-//     paragraph:
-//       "Receive gentle wellness tips, pregnancy updates, and new features designed to support every stage of your journey.",
-//     placeholder: "Enter your email address",
-//     cta: "Join Ivyra",
-//   },
-//   contactInfo: {
-//     email: "hello@ivyra.app",
-//     phone: "+1 (408) 555-184",
-//   },
-//   legal: "© 2026 Ivyra Corporation. All rights reserved.",
-//   legalLinks: ["Privacy Policy", "Terms of Use", "Cookie Policy"],
-// };
 
 export const footer = {
-  // keep whatever you already had here — shape the component expects:
   columns: [
     { links: ['Home', 'Feedback', 'About'] },
     { links: ['Contact', 'Support'] },
@@ -263,7 +176,7 @@ export const footer = {
   },
   legal: '© 2026 Tomome. All rights reserved.',
 
-  // new fields you added:
+
   infoLinks: [
     { label: 'About', href: '/about' },
     { label: 'Privacy Policy', href: '/privacy-policy' },
