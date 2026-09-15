@@ -1,22 +1,49 @@
-
 export const brand = {
   name: "Tomome",
 };
 
 export const testimonialsSection = {
-  eyebrow: 'From real Tomome mothers',
-  heading: 'The support women lean on between appointments',
+  eyebrow: "From real Tomome mothers",
+  heading: "The support women lean on between appointments",
   paragraph:
-    'Routine antenatal visits are essential for medical care. Tomome adds the ongoing education, preparation, wellness support, and day-to-day guidance many women need between those visits.',
-  avatarStack: ['/feedbacks/avatar-1.jpg', '/feedbacks/avatar-2.jpg', '/feedbacks/avatar-3.jpg'],
-  reviewCount: '4.9/5 from 300+ mothers',
+    "Routine antenatal visits are essential for medical care. Tomome adds the ongoing education, preparation, wellness support, and day-to-day guidance many women need between those visits.",
+  avatarStack: [
+    "/feedbacks/avatar-1.jpg",
+    "/feedbacks/avatar-2.jpg",
+    "/feedbacks/avatar-3.jpg",
+  ],
+  reviewCount: "4.9/5 from 300+ mothers",
   feedbacks: [
-    { image: '/public/feedbacks/feedbacks1.jpeg', category: 'yoga', alt: 'Prenatal yoga feedback from a Tomome mother' },
-    { image: '/public/feedbacks/feedbacks2.jpeg', category: 'dr-support', alt: 'Doctor support feedback from a Tomome mother' },
-    { image: '/public/feedbacks/feedbacks3.jpeg', category: 'nutrition', alt: 'Nutrition guidance feedback from a Tomome mother' },
-    { image: '/public/feedbacks/feedbacks4.jpeg', category: 'birth-stories', alt: 'Birth story feedback from a Tomome mother4' },
-    { image: '/public/feedbacks/feedbacks5.png', category: 'birth-stories', alt: 'Birth story feedback from a Tomome mother5' },
-    { image: '/public/feedbacks/feedbacks6.png', category: 'birth-stories', alt: 'Birth story feedback from a Tomome mother6' },
+    {
+      image: "feedbacks/feedbacks1.jpeg",
+      category: "yoga",
+      alt: "Prenatal yoga feedback from a Tomome mother",
+    },
+    {
+      image: "feedbacks/feedbacks2.jpeg",
+      category: "dr-support",
+      alt: "Doctor support feedback from a Tomome mother",
+    },
+    {
+      image: "feedbacks/feedbacks3.jpeg",
+      category: "nutrition",
+      alt: "Nutrition guidance feedback from a Tomome mother",
+    },
+    {
+      image: "feedbacks/feedbacks4.jpeg",
+      category: "birth-stories",
+      alt: "Birth story feedback from a Tomome mother4",
+    },
+    {
+      image: "feedbacks/feedbacks5.png",
+      category: "birth-stories",
+      alt: "Birth story feedback from a Tomome mother5",
+    },
+    {
+      image: "feedbacks/feedbacks6.png",
+      category: "birth-stories",
+      alt: "Birth story feedback from a Tomome mother6",
+    },
     // ...one entry per screenshot
   ],
 };
@@ -192,32 +219,61 @@ export const pricing = {
 //   ],
 // };
 
+// export const footer = {
+//   columns: [
+//     {
+//       title: null,
+//       links: ["Home", "Pricing & Plans"],
+//     },
+//     {
+//       title: null,
+//       links: ["Features", "Download app"],
+//     },
+//     {
+//       title: null,
+//       links: ["Our team", "Partnership"],
+//     },
+//   ],
+//   contact: {
+//     heading: "Get thoughtful pregnancy insights from Ivyra AI app",
+//     paragraph:
+//       "Receive gentle wellness tips, pregnancy updates, and new features designed to support every stage of your journey.",
+//     placeholder: "Enter your email address",
+//     cta: "Join Ivyra",
+//   },
+//   contactInfo: {
+//     email: "hello@ivyra.app",
+//     phone: "+1 (408) 555-184",
+//   },
+//   legal: "© 2026 Ivyra Corporation. All rights reserved.",
+//   legalLinks: ["Privacy Policy", "Terms of Use", "Cookie Policy"],
+// };
+
 export const footer = {
+  // keep whatever you already had here — shape the component expects:
   columns: [
-    {
-      title: null,
-      links: ["Home", "Pricing & Plans"],
-    },
-    {
-      title: null,
-      links: ["Features", "Download app"],
-    },
-    {
-      title: null,
-      links: ["Our team", "Partnership"],
-    },
+    { links: ['Home', 'Feedback', 'About'] },
+    { links: ['Contact', 'Support'] },
   ],
   contact: {
-    heading: "Get thoughtful pregnancy insights from Ivyra AI app",
-    paragraph:
-      "Receive gentle wellness tips, pregnancy updates, and new features designed to support every stage of your journey.",
-    placeholder: "Enter your email address",
-    cta: "Join Ivyra",
+    heading: 'Questions before you start?',
+    paragraph: "We're here to help.",
+    placeholder: 'Enter your email',
+    cta: 'Subscribe',
   },
-  contactInfo: {
-    email: "hello@ivyra.app",
-    phone: "+1 (408) 555-184",
+  legal: '© 2026 Tomome. All rights reserved.',
+
+  // new fields you added:
+  infoLinks: [
+    { label: 'About', href: '/about' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms of Service', href: '/terms-of-service' },
+    { label: 'Refund Policy', href: '/refund-policy' },
+  ],
+  social: {
+    instagram: 'https://instagram.com/tomome',
+    facebook: 'https://facebook.com/tomome',
+    youtube: 'https://youtube.com/@tomome',
+    linkedin: 'https://linkedin.com/company/tomome',
   },
-  legal: "© 2026 Ivyra Corporation. All rights reserved.",
-  legalLinks: ["Privacy Policy", "Terms of Use", "Cookie Policy"],
 };
