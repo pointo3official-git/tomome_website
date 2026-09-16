@@ -6,17 +6,16 @@ const HOW_IT_WORKS_STEPS = [
     title: 'Personalised Consultation',
     description:
       'Start with a 1:1 session with a senior doctor who will understand your body constitution, condition, food routine, and practices in tailored ways.',
-    image:
-      'https://www.imumz.com/_next/image?url=https%3A%2F%2Fcdn.imumz.com%2Fimumz.com%2FPregnancy%2Fprogram-page%2Fsteps%2Fstep_1.png&w=1080&q=75',
+    image:'section/docter_consultation.png',
     imageAlt: 'Personalised consultation for pregnancy care',
   },
   {
     step: 'Step 2',
     title: 'Get Your Treatment Plan',
     description:
-      "Receive a detailed, holistic regimen including Ayurvedic medicine, diet, home remedies, practices, and lifestyle changes based on your body's needs.",
+      "Receive a detailed, holistic regimen including diet, home remedies, practices, and lifestyle changes based on your body's needs.",
     image:
-      'https://www.imumz.com/_next/image?url=https%3A%2F%2Fcdn.imumz.com%2Fimumz.com%2FPregnancy%2Fprogram-page%2Fsteps%2Fstep_2.png&w=1080&q=75',
+      'section/Nurition_chat.png',
     imageAlt: 'Personalised treatment plan',
   },
   {
@@ -25,16 +24,25 @@ const HOW_IT_WORKS_STEPS = [
     description:
       'Join customized daily live classes, get personalized daily yoga exercises, get meal checks, and stay compliant with your weekly plan.',
     image:
-      'https://www.imumz.com/_next/image?url=https%3A%2F%2Fcdn.imumz.com%2Fimumz.com%2FPregnancy%2Fprogram-page%2Fsteps%2Fstep_3.png&w=1080&q=75',
+      'section/yoga_nurition.png',
     imageAlt: 'Daily coaching and support',
   },
-  {
+    {
     step: 'Step 4',
+    title: 'Childbirth Classes',
+    description:
+      'Attend live childbirth classes to learn about labor, delivery, and postpartum care, ensuring you are well-prepared for the journey ahead.',
+    image:
+      'section/childbirth_class.jpg',
+    imageAlt: 'Childbirth classes',
+  },
+  {
+    step: 'Step 5',
     title: 'Track Progress & Follow-Up',
     description:
       'Document what is helping in your daily routine, notice if something is not working, and use regular follow-ups to review feedback and refine your plan.',
     image:
-      'https://www.imumz.com/_next/image?url=https%3A%2F%2Fcdn.imumz.com%2Fimumz.com%2FPregnancy%2Fprogram-page%2Fsteps%2Fstep_4.png&w=1080&q=75',
+      '/public/section/couple.jpg',
     imageAlt: 'Progress tracking and follow-up',
   },
 ];
