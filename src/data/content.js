@@ -2,6 +2,50 @@ export const brand = {
   name: "Tomome",
 };
 
+export const expertsSection = {
+  eyebrow: 'Your care team',
+  heading: 'Meet the experts who will guide you',
+  paragraph:
+    'Trusted guidance, anytime you need it. Meet the experts who make the Womb Care Program truly personal.',
+  experts: [
+    {
+      name: 'Dr. Ashna',
+      role: 'Gynaecologist',
+      qualification: 'MBBS, MS (OBG)',
+      // languages: 'English, Hindi, Kannada, Telugu',
+      image: '/experts/ashna.png',
+    },
+    {
+      name: 'Dr. Hamna',
+      role: 'Ayurvedic doctor',
+      qualification: 'BAMS, M.D (Ayu)',
+      // languages: 'English, Kannada, Tamil, Telugu',
+      image: '/experts/hamna.png',
+    },
+    {
+      name: 'Dr. Natasha',
+      role: 'Nutritionist',
+      qualification: 'MSc Clinical Nutrition & Dietetics',
+      // languages: 'Kannada, English, Telugu, Tamil, Hindi',
+      image: '/experts/natasha.png',
+    },
+    {
+      name: 'Dr. Asbina',
+      role: 'Childbirth educator',
+      qualification: 'Certified Childbirth Educator, Lamaze',
+      // languages: 'English, Malayalam, Tamil',
+      image: '/experts/asbina.png',
+    },
+    {
+      name: 'Ramya',
+      role: 'Yoga trainer',
+      qualification: 'Certified Prenatal & Postnatal Yoga Trainer',
+      // languages: 'Kannada, Marathi, Hindi, English',
+      image: '/experts/ramya_profile.png',
+    },
+  ],
+};
+
 export const testimonialsSection = {
   eyebrow: "From real Tomome mothers",
   heading: "The support women lean on between appointments",

@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import HowItWorks from "../components/Program/HowItWorks";
+import Experts from "../components/Program/MeetTheExperts";
 import ProgramEnquiry from "../components/Program/ProgramEnqury";
 import WhatWeCanOffer from "../components/Program/WhatWeCanOffer";
 
@@ -11,6 +12,7 @@ export default function ProgramPage() {
       <ProgramEnquiry />
       <WhatWeCanOffer/>
       <HowItWorks />
+      <Experts/>
       <Footer />
     </div>
   );
