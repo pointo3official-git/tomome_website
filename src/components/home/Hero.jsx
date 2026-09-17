@@ -114,10 +114,10 @@ export default function Hero() {
             absolute
             inset-0
             bg-gradient-to-b
-            from-black/10
-            via-transparent
-            to-black/10
-          "
+            "
+            // from-black/10
+            // via-transparent
+            // to-black/10
         />
 
         {/* ---------------------------------------------------------- */}
