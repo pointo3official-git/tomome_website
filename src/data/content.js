@@ -224,13 +224,13 @@ export const footer = {
   infoLinks: [
     { label: 'About', href: '/about' },
     { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Terms of Service', href: '/terms-of-service' },
+    { label: 'Terms and Conditions', href: '/terms-and-conditions' },
     { label: 'Refund Policy', href: '/refund-policy' },
   ],
   social: {
-    instagram: 'https://instagram.com/tomome',
-    facebook: 'https://facebook.com/tomome',
-    youtube: 'https://youtube.com/@tomome',
+    instagram: 'https://www.instagram.com/tomome_official/',
+    facebook: 'https://www.facebook.com/profile.php?id=61589576803668',
+    youtube: 'https://www.youtube.com/@tomome-official',
     linkedin: 'https://linkedin.com/company/tomome',
   },
 };

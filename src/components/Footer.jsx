@@ -2,15 +2,8 @@ import { motion } from "motion/react";
 import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 import { footer, brand } from "../data/content";
 
-const DEFAULT_INFO_LINKS = [
-  { label: "About", href: "/about" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms of Service", href: "/terms-of-service" },
-  { label: "Refund Policy", href: "/refund-policy" },
-];
-
 export default function Footer() {
-  const infoLinks = footer.infoLinks ?? DEFAULT_INFO_LINKS;
+  const infoLinks = footer.infoLinks;
 
   const socialLinks = [
     {
@@ -31,12 +24,12 @@ export default function Footer() {
       Icon: Youtube,
       href: footer.social?.youtube,
     },
-    {
-      key: "linkedin",
-      label: "LinkedIn",
-      Icon: Linkedin,
-      href: footer.social?.linkedin,
-    },
+    // {
+    //   key: "linkedin",
+    //   label: "LinkedIn",
+    //   Icon: Linkedin,
+    //   href: footer.social?.linkedin,
+    // },
   ];
 
   const focusRing =

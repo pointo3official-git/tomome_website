@@ -4,6 +4,7 @@ import NotFound from "./components/NotFound";
 import ProgramPage from "./pages/Program";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
+import TermsAndConditionsPage from "./pages/TermsandConditions";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Route path="/program" element={<ProgramPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

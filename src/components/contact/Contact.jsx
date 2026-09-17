@@ -1,6 +1,7 @@
 
 import { motion } from "motion/react";
 import { ArrowRight, Instagram } from "lucide-react";
+import { footer } from "../../data/content";
 
 // --------------------------------------------------
 // Contact details
@@ -13,8 +14,6 @@ const WHATSAPP_MESSAGE =
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   WHATSAPP_MESSAGE
 )}`;
-
-const INSTAGRAM_URL = "https://www.instagram.com/tomome_official/";
 
 // --------------------------------------------------
 // WhatsApp Icon
@@ -235,7 +234,7 @@ export default function Contact() {
 
               {/* Instagram */}
               <a
-                href={INSTAGRAM_URL}
+                href={footer.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit Tomome on Instagram"
