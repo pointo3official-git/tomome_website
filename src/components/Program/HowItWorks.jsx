@@ -42,7 +42,7 @@ const HOW_IT_WORKS_STEPS = [
     description:
       'Document what is helping in your daily routine, notice if something is not working, and use regular follow-ups to review feedback and refine your plan.',
     image:
-      '/public/section/couple.jpg',
+      'section/couple.jpg',
     imageAlt: 'Progress tracking and follow-up',
   },
 ];
