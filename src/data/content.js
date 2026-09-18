@@ -11,14 +11,14 @@ export const expertsSection = {
     {
       name: 'Dr. Ashna',
       role: 'Gynaecologist',
-      qualification: 'MBBS, MS (OBG)',
+      qualification: 'MBBS (OBG)',
       // languages: 'English, Hindi, Kannada, Telugu',
       image: '/experts/ashna.png',
     },
     {
       name: 'Dr. Hamna',
       role: 'Ayurvedic doctor',
-      qualification: 'BAMS, M.D (Ayu)',
+      qualification: 'BAMS (Ayu)',
       // languages: 'English, Kannada, Tamil, Telugu',
       image: '/experts/hamna.png',
     },
