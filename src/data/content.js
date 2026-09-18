@@ -104,20 +104,20 @@ export const hero = {
   heroImage: "section/hero.png",
   floatingCards: {
     chat: {
-      name: `Angana`,
+      name: `Anjana`,
       time: "I gained 2.5 kg within one month 😊",
     },
     chat2: {
-      name: `Gifity`,
+      name: `Gifty`,
       time: "Having a yoga trainer, nutrition, gynaecologist,and phycologist available troughout the journey has been such a blessing 💖",
     },
     chat3: {
-      name: `Megha`,
-      time: "since i start yoga, i have experienced better sleep, reduced body pain and overall improvement in my wellbeing 🤍",
+      name: `Keerthana`,
+      time: "Since i start yoga, i have experienced better sleep, reduced body pain and overall improvement in my wellbeing 🤍",
     },
     chat4: {
-      name: `Rosy`,
-      time: "Having a trainer has really motivated me to practice regularly.🥰",
+      name: `Farha`,
+      time: "What I loved most about Tomome was that I never felt like I was going through pregnancy alone. Whenever I had a doubt or felt worried, there was someone to guide me and explain things clearly🥰",
     },
   },
 };
