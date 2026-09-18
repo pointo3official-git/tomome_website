@@ -97,8 +97,8 @@ export const nav = {
 };
 
 export const hero = {
-  heading1: "More than checkups.",
-  heading2: "Support for every day of pregnancy.",
+  heading1: "Your Baby Deserves",
+  heading2: "The Best Start",
   primaryCta: "Book Free Demo",
   secondaryCta: "Start Journey",
   heroImage: "section/hero.png",

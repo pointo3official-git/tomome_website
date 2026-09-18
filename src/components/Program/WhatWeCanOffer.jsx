@@ -5,7 +5,7 @@ const HOW_ITEMS = [
     id: "yoga-class",
     title: "Daily Live Yoga Classes",
     description:
-      "Stay active and prepare your body for delivery. Custom sessions including Sukshma yoga, Garbha yoga and Labour prep yoga, Couple yoga with flexible slots from morning to evening.",
+      "Stay active and prepare your body for delivery. Custom sessions including Sukshma yoga, Garbha yoga and Labour prep yoga with flexible slots from morning to evening.",
     image: "experts/live_yoga.png",
     imageAlt: "Yoga class session with a tomome trainer",
   },

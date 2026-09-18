@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
-import { MessageCircle } from 'lucide-react';
-import { hero } from '../../data/content';
+import { motion } from "motion/react";
+import { MessageCircle } from "lucide-react";
+import { hero } from "../../data/content";
 
 /* ------------------------------------------------------------------ */
 /* Floating animation                                                  */
@@ -11,7 +11,7 @@ const float = (delay = 0) => ({
   transition: {
     duration: 5,
     repeat: Infinity,
-    ease: 'easeInOut',
+    ease: "easeInOut",
     delay,
   },
 });
@@ -21,9 +21,9 @@ const float = (delay = 0) => ({
 /* ------------------------------------------------------------------ */
 
 const card =
-  'absolute z-20 box-border rounded-xl bg-white/95 shadow-card backdrop-blur-sm ' +
-  'p-2.5 sm:rounded-2xl sm:p-3 md:p-4 ' +
-  'overflow-hidden min-w-0';
+  "absolute z-20 box-border rounded-xl bg-white/95 shadow-card backdrop-blur-sm " +
+  "p-2.5 sm:rounded-2xl sm:p-3 md:p-4 " +
+  "overflow-hidden min-w-0";
 
 /* ------------------------------------------------------------------ */
 /* Chat bubble                                                         */
@@ -115,9 +115,9 @@ export default function Hero() {
             inset-0
             bg-gradient-to-b
             "
-            // from-black/10
-            // via-transparent
-            // to-black/10
+          // from-black/10
+          // via-transparent
+          // to-black/10
         />
 
         {/* ---------------------------------------------------------- */}
@@ -142,7 +142,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.6,
-              ease: 'easeOut',
+              ease: "easeOut",
               delay: 0.1,
             }}
             className="
@@ -198,10 +198,7 @@ export default function Hero() {
             md:w-56
           `}
         >
-          <ChatBubble
-            name={chat.name}
-            message={chat.time}
-          />
+          <ChatBubble name={chat.name} message={chat.time} />
         </motion.div>
 
         {/* ---------------------------------------------------------- */}
@@ -236,10 +233,7 @@ export default function Hero() {
             xl:w-60
           `}
         >
-          <ChatBubble
-            name={chat2.name}
-            message={chat2.time}
-          />
+          <ChatBubble name={chat2.name} message={chat2.time} />
         </motion.div>
 
         {/* ---------------------------------------------------------- */}
@@ -274,10 +268,7 @@ export default function Hero() {
             xl:w-60
           `}
         >
-          <ChatBubble
-            name={chat3.name}
-            message={chat3.time}
-          />
+          <ChatBubble name={chat3.name} message={chat3.time} />
         </motion.div>
 
         {/* ---------------------------------------------------------- */}
@@ -312,10 +303,7 @@ export default function Hero() {
             xl:w-60
           `}
         >
-          <ChatBubble
-            name={chat4.name}
-            message={chat4.time}
-          />
+          <ChatBubble name={chat4.name} message={chat4.time} />
         </motion.div>
       </div>
     </section>
