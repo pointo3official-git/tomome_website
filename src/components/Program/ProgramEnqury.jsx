@@ -1,30 +1,30 @@
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
-import { testimonialsSection } from '../../data/content';
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { ArrowRight } from "lucide-react";
+import { testimonialsSection } from "../../data/content";
 
 const feedbackImages = testimonialsSection.feedbacks;
 
 // Caption shown over each image, keyed by category.
 const categoryCaptions = {
-  yoga: 'Daily Live Yoga Sessions',
-  'dr-support': 'Doctor Support, Anytime',
-  nutrition: 'Expert Nutrition Guidance',
-  'birth-stories': 'Real Birth Stories from Tomome Moms',
-  default: 'Real Stories from Tomome Mothers',
+  yoga: "Daily Live Yoga Sessions",
+  "dr-support": "Doctor Support, Anytime",
+  nutrition: "Expert Nutrition Guidance",
+  "birth-stories": "Real Birth Stories from Tomome Moms",
+  default: "Real Stories from Tomome Mothers",
 };
 
 // -------------------------------------------------------------------
 // Enquiry links
 // -------------------------------------------------------------------
 const GOOGLE_FORM_URL =
-  'https://docs.google.com/forms/d/e/1FAIpQLSceUa_B6n48yDCF4cUv376xxwfG63WZCwK6s8SpkL2kOgx6ZA/viewform';
+  "https://docs.google.com/forms/d/e/1FAIpQLSceUa_B6n48yDCF4cUv376xxwfG63WZCwK6s8SpkL2kOgx6ZA/viewform";
 
-const WHATSAPP_NUMBER = '917306288896'; // +91 73062 88896
+const WHATSAPP_NUMBER = "917306288896"; // +91 73062 88896
 const WHATSAPP_MESSAGE =
   "Hi Tomome, I'd like to know more about the Womb Care Program.";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  WHATSAPP_MESSAGE
+  WHATSAPP_MESSAGE,
 )}`;
 
 const AUTO_SLIDE_INTERVAL_MS = 3500;
@@ -34,10 +34,13 @@ const AUTO_SLIDE_INTERVAL_MS = 3500;
 // -------------------------------------------------------------------
 function WhatsAppIcon({ className }) {
   return (
-    <svg viewBox="0 0 32 32" fill="currentColor" className={className} aria-hidden="true">
-      <path
-        d="M16.004 3.2C8.977 3.2 3.28 8.897 3.28 15.924c0 2.42.665 4.68 1.822 6.614L3.2 28.8l6.44-1.843a12.63 12.63 0 0 0 6.364 1.71h.005c7.027 0 12.723-5.697 12.723-12.724S23.03 3.2 16.004 3.2Zm0 23.077h-.004a10.5 10.5 0 0 1-5.35-1.465l-.384-.228-3.82 1.093 1.11-3.72-.25-.382a10.46 10.46 0 0 1-1.605-5.65c0-5.803 4.72-10.522 10.507-10.522 2.807 0 5.444 1.092 7.43 3.078a10.43 10.43 0 0 1 3.076 7.437c0 5.803-4.72 10.36-10.71 10.36Zm5.798-7.756c-.318-.16-1.882-.928-2.174-1.034-.291-.107-.503-.16-.715.16-.211.318-.82 1.033-1.005 1.245-.185.212-.37.239-.688.08-.318-.16-1.343-.495-2.558-1.578-.946-.843-1.584-1.885-1.769-2.203-.185-.318-.02-.49.14-.65.144-.143.318-.372.478-.557.16-.186.212-.318.318-.53.106-.212.053-.398-.026-.557-.08-.16-.715-1.723-.98-2.36-.258-.62-.52-.536-.715-.546l-.61-.011a1.17 1.17 0 0 0-.847.398c-.291.318-1.11 1.086-1.11 2.648 0 1.562 1.137 3.071 1.296 3.283.16.212 2.238 3.417 5.422 4.793.758.327 1.35.523 1.812.669.761.242 1.454.208 2.002.126.611-.091 1.882-.77 2.148-1.513.265-.744.265-1.38.185-1.513-.08-.132-.291-.212-.61-.371Z"
-      />
+    <svg
+      viewBox="0 0 32 32"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M16.004 3.2C8.977 3.2 3.28 8.897 3.28 15.924c0 2.42.665 4.68 1.822 6.614L3.2 28.8l6.44-1.843a12.63 12.63 0 0 0 6.364 1.71h.005c7.027 0 12.723-5.697 12.723-12.724S23.03 3.2 16.004 3.2Zm0 23.077h-.004a10.5 10.5 0 0 1-5.35-1.465l-.384-.228-3.82 1.093 1.11-3.72-.25-.382a10.46 10.46 0 0 1-1.605-5.65c0-5.803 4.72-10.522 10.507-10.522 2.807 0 5.444 1.092 7.43 3.078a10.43 10.43 0 0 1 3.076 7.437c0 5.803-4.72 10.36-10.71 10.36Zm5.798-7.756c-.318-.16-1.882-.928-2.174-1.034-.291-.107-.503-.16-.715.16-.211.318-.82 1.033-1.005 1.245-.185.212-.37.239-.688.08-.318-.16-1.343-.495-2.558-1.578-.946-.843-1.584-1.885-1.769-2.203-.185-.318-.02-.49.14-.65.144-.143.318-.372.478-.557.16-.186.212-.318.318-.53.106-.212.053-.398-.026-.557-.08-.16-.715-1.723-.98-2.36-.258-.62-.52-.536-.715-.546l-.61-.011a1.17 1.17 0 0 0-.847.398c-.291.318-1.11 1.086-1.11 2.648 0 1.562 1.137 3.071 1.296 3.283.16.212 2.238 3.417 5.422 4.793.758.327 1.35.523 1.812.669.761.242 1.454.208 2.002.126.611-.091 1.882-.77 2.148-1.513.265-.744.265-1.38.185-1.513-.08-.132-.291-.212-.61-.371Z" />
     </svg>
   );
 }
@@ -62,7 +65,8 @@ function FeedbackCarousel({ feedbacks }) {
   if (feedbacks.length === 0) return null;
 
   const current = feedbacks[index];
-  const caption = categoryCaptions[current.category] ?? categoryCaptions.default;
+  const caption =
+    categoryCaptions[current.category] ?? categoryCaptions.default;
 
   return (
     <div
@@ -76,7 +80,7 @@ function FeedbackCarousel({ feedbacks }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.7, ease: 'easeInOut' }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
           className="absolute inset-0"
         >
           {/*
@@ -123,7 +127,7 @@ function FeedbackCarousel({ feedbacks }) {
               rounded-full
               transition-all
               duration-300
-              ${i === index ? 'w-6 bg-white' : 'w-1.5 bg-white/50 hover:bg-white/80'}
+              ${i === index ? "w-6 bg-white" : "w-1.5 bg-white/50 hover:bg-white/80"}
             `}
           />
         ))}
@@ -176,7 +180,7 @@ export default function ProgramEnquiry() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="
               relative
               order-1
@@ -201,7 +205,7 @@ export default function ProgramEnquiry() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
             className="
               order-2
               flex
@@ -245,11 +249,13 @@ export default function ProgramEnquiry() {
             </p>
 
             <p className="mt-6 text-sm leading-relaxed text-muted sm:text-base">
-              Program starts at{' '}
+              Program starts at{" "}
               <span className="text-lg font-semibold text-ink sm:text-xl">
-                ₹ 2999/mo
-              </span>{' '}
-              {/* <span className="line-through">₹ 3,999/mo</span> + 18% GST */}
+                ₹ 2,999/mo
+              </span>{" "}
+              <span className="text-sm text-muted line-through sm:text-base">
+                ₹ 4,000/mo
+              </span>
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
