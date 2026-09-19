@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 import { footer, brand } from "../data/content";
 

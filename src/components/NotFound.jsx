@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowLeft, Home } from "lucide-react";
 
-// Router-agnostic on purpose: plain anchors work with react-router, Next,
-// or a static build. If you use react-router, swap <a href> for <Link to>.
 const QUICK_LINKS = [
   { label: "Womb Care Program", href: "/#program" },
   { label: "Meet our experts", href: "/#experts" },
@@ -14,7 +12,7 @@ const QUICK_LINKS = [
 export default function NotFound({
   homeHref = "/",
   links = QUICK_LINKS,
-  supportHref = "mailto:care@tomome.in",
+  supportHref = "mailto:pointo3official@gmail.com",
 }) {
   const prefersReducedMotion = useReducedMotion();
 
@@ -26,8 +24,6 @@ export default function NotFound({
     };
   }, []);
 
-  // Browsers that landed here from an external link have no history to pop,
-  // so fall back to home instead of leaving the button dead.
   const goBack = () => {
     if (window.history.length > 1) window.history.back();
     else window.location.assign(homeHref);
@@ -75,7 +71,6 @@ export default function NotFound({
         >
           <div className="pointer-events-none absolute inset-0 rounded-full bg-blush-100/70 blur-3xl" />
 
-          {/* rotation lives on its own node so it never fights the layout */}
           <motion.div
             aria-hidden="true"
             animate={prefersReducedMotion ? undefined : { rotate: 360 }}

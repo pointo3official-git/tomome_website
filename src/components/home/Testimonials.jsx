@@ -19,7 +19,6 @@ function FeedbackCard({ feedback, isActive }) {
       <span className="absolute left-3 top-3 z-10 rounded-full bg-cream/95 px-3 py-1 text-[11px] font-medium text-ink shadow-sm">
         {CATEGORY_LABELS[feedback.category] ?? feedback.category}
       </span>
-      {/* object-contain (not cover) so screenshot text never gets cropped */}
       <img
         src={feedback.image}
         alt={feedback.alt}

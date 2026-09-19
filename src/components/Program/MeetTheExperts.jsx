@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'motion/react';
-import { GraduationCap, MessagesSquare } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { expertsSection } from '../../data/content';
 
 const REPEATS = 3;
@@ -20,7 +20,6 @@ function ExpertCard({ expert }) {
         {expert.role}
       </span>
 
-      {/* keeps the white info card readable over a busy photo */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 to-transparent" />
 
       <div className="absolute inset-x-3 bottom-3 rounded-xl border border-black/5 bg-white/95 px-3.5 py-3 shadow-sm backdrop-blur-sm">
@@ -32,11 +31,6 @@ function ExpertCard({ expert }) {
           <GraduationCap className="mt-px h-3.5 w-3.5 shrink-0 text-blush-500" />
           <span>{expert.qualification}</span>
         </p>
-
-        {/* <p className="mt-1.5 flex items-start gap-2 text-[12px] leading-snug text-muted">
-          <MessagesSquare className="mt-px h-3.5 w-3.5 shrink-0 text-blush-500" />
-          <span>{expert.languages}</span>
-        </p> */}
       </div>
     </article>
   );
@@ -46,7 +40,6 @@ export default function Experts() {
   const prefersReducedMotion = useReducedMotion();
   const { experts } = expertsSection;
 
-  // With reduced motion we drop the clones and let the row be scrolled by hand.
   const repeats = prefersReducedMotion ? 1 : REPEATS;
   const slides = Array.from({ length: repeats }, () => experts).flat();
 
@@ -86,8 +79,6 @@ export default function Experts() {
             <div
               key={`${expert.name}-${i}`}
               role="listitem"
-              // padding-right instead of flex gap: the spacing is part of each
-              // card's width, so one copy is an exact multiple and the loop is seamless
               className="w-[68vw] max-w-[280px] shrink-0 pr-4 sm:w-[46vw] md:w-[300px] md:pr-6 lg:w-[290px] xl:w-[300px]"
               aria-hidden={i >= experts.length ? 'true' : undefined}
             >

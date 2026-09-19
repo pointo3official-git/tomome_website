@@ -86,6 +86,8 @@ export const testimonialsSection = {
   ],
 };
 
+
+//=== nav and footer data =====
 export const nav = {
   links: [
     { label: "Home", href: "/", active: true },
@@ -95,42 +97,6 @@ export const nav = {
   ],
   cta: "Download",
 };
-
-export const featureSplit = {
-  eyebrow: "FOR EVERY STAGE",
-  heading: "Memories, wellness, and support way in one place",
-  paragraph1:
-    "Capture meaningful moments, track your wellbeing, and reflect on every stage of your journey in one calm and supportive space.",
-  paragraph2:
-    "From daily reflections and baby milestones to AI-guided insights and voice memories, Ivyra helps you stay connected to both your emotions and your health throughout pregnancy.",
-  mockup: {
-    name: "Sarah Frogsters",
-    time: "April 16, 11:45 AM",
-    message:
-      "Getting closer every day. Started packing the hospital bag today... it suddenly feels very real.",
-    signature: "With love, Sarah",
-    image:
-      "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=1000&auto=format&fit=crop",
-  },
-};
-
-export const partners = {
-  eyebrow: "PARTNERS & INSPIRATION",
-  heading: "Trusted by modern wellness & motherhood platforms",
-  paragraph:
-    "Built with inspiration from the world's leading wellness, mindfulness, and women's health experiences to support a more thoughtful pregnancy journey.",
-  icons: [
-    "yoga",
-    "birth_class",
-    "medical support",
-    "nutrition",
-    // "droplet",
-    // "leaf",
-    // "flame",
-    // "circle-dot",
-  ],
-};
-
 
 export const footer = {
   columns: [

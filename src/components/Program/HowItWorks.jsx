@@ -1,51 +1,5 @@
 import { motion } from 'motion/react';
-
-const HOW_IT_WORKS_STEPS = [
-  {
-    step: 'Step 1',
-    title: 'Personalised Consultation',
-    description:
-      'Start with a 1:1 session with a senior doctor who will understand your body constitution, condition, food routine, and practices in tailored ways.',
-    image:'section/docter_consultation.png',
-    imageAlt: 'Personalised consultation for pregnancy care',
-  },
-  {
-    step: 'Step 2',
-    title: 'Get Your Treatment Plan',
-    description:
-      "Receive a detailed, holistic regimen including diet, home remedies, practices, and lifestyle changes based on your body's needs.",
-    image:
-      'section/Nurition_chat.png',
-    imageAlt: 'Personalised treatment plan',
-  },
-  {
-    step: 'Step 3',
-    title: 'Daily Coaching & Support',
-    description:
-      'Join customized daily live classes, get personalized daily yoga exercises, get meal checks, and stay compliant with your weekly plan.',
-    image:
-      'section/yoga_nurition.png',
-    imageAlt: 'Daily coaching and support',
-  },
-    {
-    step: 'Step 4',
-    title: 'Childbirth Classes',
-    description:
-      'Attend live childbirth classes to learn about labor, delivery, and postpartum care, ensuring you are well-prepared for the journey ahead.',
-    image:
-      'section/childbirth_class.jpg',
-    imageAlt: 'Childbirth classes',
-  },
-  {
-    step: 'Step 5',
-    title: 'Track Progress & Follow-Up',
-    description:
-      'Document what is helping in your daily routine, notice if something is not working, and use regular follow-ups to review feedback and refine your plan.',
-    image:
-      'section/couple.jpg',
-    imageAlt: 'Progress tracking and follow-up',
-  },
-];
+import { HOW_IT_WORKS_STEPS } from '../../data/program';
 
 function StepText({ step, index }) {
   return (

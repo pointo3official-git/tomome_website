@@ -75,27 +75,6 @@ export default function PartnerOrbit() {
           </p>
         </motion.div>
 
-        {/* ======================================================== */}
-        {/* Orbit                                                     */}
-        {/* ======================================================== */}
-        {/*
-          IMPORTANT: framer-motion's `animate`/`whileInView` writes its own
-          inline `transform` (rotate/scale) on the element it's attached to.
-          That inline transform REPLACES any Tailwind transform classes on
-          the same element (like -translate-x-1/2 -translate-y-1/2), it
-          doesn't merge with them. That's what was pushing the rotating
-          orbit and the logo off-center: their centering translate was
-          being wiped out by the animation's own transform.
-
-          Fix: each animated piece is now split into two nodes -
-          - an outer, non-animated element that only handles absolute
-            positioning + the -translate-x/y-1/2 centering, and
-          - an inner motion.* element, sized to fill the outer one, that
-            only handles the animation (rotate / scale).
-          Since the two transforms live on different elements, they no
-          longer fight each other.
-        */}
-
         <div
           className="
             relative
@@ -151,7 +130,6 @@ export default function PartnerOrbit() {
           {/* Rotating orbit                                           */}
           {/* ====================================================== */}
 
-          {/* Positioning wrapper: centers the orbit, never touched by motion */}
           <div
             className="
               absolute
@@ -165,8 +143,6 @@ export default function PartnerOrbit() {
               sm:w-[370px]
             "
           >
-            {/* Animated wrapper: only rotation lives here, so it rotates
-                in place around the same center the wrapper above defined */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{
@@ -183,13 +159,8 @@ export default function PartnerOrbit() {
             >
               {SUPPORT_ITEMS.map((item, index) => {
                 const Icon = item.icon;
-
                 const count = SUPPORT_ITEMS.length;
                 const angle = (index / count) * 2 * Math.PI;
-
-                // Unitless direction, multiplied against the CSS
-                // --orbit-radius variable below, so the radius itself can
-                // change per breakpoint without any JS/resize listener.
                 const cos = Math.cos(angle);
                 const sin = Math.sin(angle);
 
@@ -208,8 +179,6 @@ export default function PartnerOrbit() {
                       top: `calc(50% + var(--orbit-radius) * ${sin})`,
                     }}
                   >
-                    {/* Counter-rotates so the icon/label stay upright
-                        while still orbiting the outer ring */}
                     <motion.div
                       animate={{ rotate: -360 }}
                       transition={{
@@ -304,7 +273,6 @@ export default function PartnerOrbit() {
           {/* Center Tomome logo                                      */}
           {/* ====================================================== */}
 
-          {/* Positioning wrapper: centers the logo, never touched by motion */}
           <div
             className="
               absolute
@@ -396,39 +364,6 @@ export default function PartnerOrbit() {
           >
             Everything you need between those visits, in one place.
           </h3>
-
-          {/* <p
-            className="
-              mx-auto
-              mt-4
-              max-w-2xl
-              text-sm
-              leading-relaxed
-              text-muted
-              sm:text-base
-            "
-          >
-            Tomome brings together expert gynecologist guidance, nutrition,
-            prenatal yoga, childbirth education, and emotional support so you
-            don't have to depend on scattered advice throughout your pregnancy.
-          </p> */}
-
-          {/* <p
-            className="
-              mx-auto
-              mt-5
-              max-w-xl
-              text-base
-              font-medium
-              leading-relaxed
-              text-ink
-              sm:text-lg
-            "
-          >
-            Your doctor takes care of your medical care.
-            <br className="hidden sm:block" />
-            Tomome is here for the days in between.
-          </p> */}
         </motion.div>
 
         {/* ======================================================== */}

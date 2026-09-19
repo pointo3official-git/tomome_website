@@ -41,11 +41,6 @@ function ChatBubble({ name, message }) {
           {name}
         </p>
       </div>
-
-      {/* 
-        No truncate / line-clamp here.
-        The complete message is allowed to wrap naturally.
-      */}
       <p
         className="
           mt-1.5

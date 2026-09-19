@@ -1,93 +1,6 @@
 import { motion } from "motion/react";
+import { HOW_ITEMS, CHILDBIRTH_CLASSES } from "../../data/program";
 
-const HOW_ITEMS = [
-  {
-    id: "yoga-class",
-    title: "Daily Live Yoga Classes",
-    description:
-      "Stay active and prepare your body for delivery. Custom sessions including Sukshma yoga, Garbha yoga and Labour prep yoga with flexible slots from morning to evening.",
-    image: "experts/live_yoga.png",
-    imageAlt: "Yoga class session with a tomome trainer",
-  },
-  {
-    id: "nutrition-support",
-    title: "Custom Nutrition Plans",
-    description:
-      "Weekly meal guides, easy recipes, and tailored diets based on your health condition and baby's development. Because what you eat directly impacts your baby's growth.",
-
-    image: "section/nutrition_Support.png",
-    imageAlt: "nutrition guidance with a tomome nutritionist",
-  },
-
-  {
-    id: "mom-to-be-community",
-    title: "Mom-to-Be Community",
-    description:
-      "A moderated, safe space to connect with other expecting mothers, share experiences, and learn together. Your safe space to learn, laugh and lean on other moms.",
-
-    image: "section/tomome-community.png",
-    imageAlt: "mom-to-be community image with a group of mothers and a tomome expert",
-  },
-
-  {
-    id: "expert-support",
-    title: "Personalized, Expert Support",
-    description:
-      "Get one-on-one guidance from Ayurvedic doctors, nutritionists, yoga coaches, and care managers – available via chat, call, or video, whenever you need it.",
-
-    image: "section/Expert_Support.png",
-    imageAlt: "Personalized expert support image with a tomome expert",
-  },
-];
-
-// --------------------------------------------------------------
-// Data for the "Childbirth classes" panel — four topic cards that
-// float around a centered hero image on larger screens (matching
-// the reference layout: two cards up top, two along the bottom),
-// and drop into a simple 2-column grid below the image on mobile.
-// Swap the `image` paths for your real assets when ready.
-// --------------------------------------------------------------
-
-const CHILDBIRTH_CLASSES = [
-  {
-    id: "labour-birth",
-    title: "Understand Labour",
-    description: "What is vaginal birth, the psychology of birth, and more.",
-    image: "section/sam.jfif",
-    imageAlt: "Understand labour and birth icon",
-    wrapperClassName: "left-0 top-0 sm:left-[1%] sm:top-[6%] md:left-[6%]",
-  },
-  {
-    id: "pain-management",
-    title: "Pain Management",
-    description: "Breastfeeding, cesarean section, and more.",
-    image: "section/pain_management.jfif",
-    imageAlt: "Pain management icon",
-    wrapperClassName: "right-0 top-0 sm:right-[1%] sm:top-[6%] md:right-[6%]",
-  },
-  {
-    id: "newborn-care",
-    title: "New Born Care",
-    description: "Pee guide, potty training, and more.",
-    image: "section/new_born_care.jfif",
-    imageAlt: "New born care icon",
-    wrapperClassName:
-      "left-0 bottom-0 sm:left-[3%] sm:bottom-[8%] md:left-[10%]",
-  },
-  {
-    id: "postpartum-wellness",
-    title: "Postpartum Wellness",
-    description: "Don'ts of exercise, warning signs, and more.",
-    image: "section/postpartum.jfif",
-    imageAlt: "Postpartum wellness icon",
-    wrapperClassName:
-      "right-0 bottom-0 sm:right-[3%] sm:bottom-[8%] md:right-[10%]",
-  },
-];
-
-// Shared card visuals — a small square icon plus a title/description
-// pair. Used both for the absolutely-positioned desktop cards and the
-// plain-flow mobile grid, so the two stay visually identical.
 function ClassCardContent({ item, className = "" }) {
   return (
     <div
@@ -112,8 +25,6 @@ function ClassCardContent({ item, className = "" }) {
   );
 }
 
-// Only rendered from `sm` upward — see the mobile grid in the main
-// component for the small-screen equivalent.
 function FloatingClassCard({ item, index }) {
   return (
     <motion.div
@@ -323,16 +234,6 @@ export default function WhatWeCanOffer() {
           ))}
         </div>
 
-        {/* -------------------------------------------------------- */}
-        {/* Third panel: "Childbirth classes"                          */}
-        {/* Sits below the two columns above, full width.              */}
-        {/* >= sm: a centered hero image with four topic cards          */}
-        {/* floating around it (two up top, two along the bottom),      */}
-        {/* matching the reference design.                              */}
-        {/* < sm: the same hero image, then the four cards laid out      */}
-        {/* as a simple 2-column grid underneath.                        */}
-        {/* -------------------------------------------------------- */}
-
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -433,11 +334,14 @@ export default function WhatWeCanOffer() {
 
             <div className="grid w-full grid-cols-1 gap-3">
               {CHILDBIRTH_CLASSES.map((item) => (
-                <ClassCardContent key={item.id} item={item} className="w-full" />
+                <ClassCardContent
+                  key={item.id}
+                  item={item}
+                  className="w-full"
+                />
               ))}
             </div>
           </div>
-          
         </motion.div>
       </div>
     </section>

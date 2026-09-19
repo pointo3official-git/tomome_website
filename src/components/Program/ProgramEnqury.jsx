@@ -2,30 +2,9 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { testimonialsSection } from "../../data/content";
+import { GOOGLE_FORM_URL,WHATSAPP_URL,categoryCaptions } from "../../data/program";
 
 const feedbackImages = testimonialsSection.feedbacks;
-
-// Caption shown over each image, keyed by category.
-const categoryCaptions = {
-  yoga: "Daily Live Yoga Sessions",
-  "dr-support": "Doctor Support, Anytime",
-  nutrition: "Expert Nutrition Guidance",
-  "birth-stories": "Real Birth Stories from Tomome Moms",
-  default: "Real Stories from Tomome Mothers",
-};
-
-// -------------------------------------------------------------------
-// Enquiry links
-// -------------------------------------------------------------------
-const GOOGLE_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSceUa_B6n48yDCF4cUv376xxwfG63WZCwK6s8SpkL2kOgx6ZA/viewform";
-
-const WHATSAPP_NUMBER = "917306288896"; // +91 73062 88896
-const WHATSAPP_MESSAGE =
-  "Hi Tomome, I'd like to know more about the Womb Care Program.";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  WHATSAPP_MESSAGE,
-)}`;
 
 const AUTO_SLIDE_INTERVAL_MS = 3500;
 
@@ -83,12 +62,6 @@ function FeedbackCarousel({ feedbacks }) {
           transition={{ duration: 0.7, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          {/*
-            object-contain (not object-cover): guarantees the whole
-            screenshot is visible, never cropped top/bottom. The
-            bg-blush-100 on the wrapper fills any letterboxed space
-            so it reads as an intentional frame, not empty space.
-          */}
           <img
             src={current.image}
             alt={current.alt}
