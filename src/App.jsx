@@ -4,7 +4,7 @@ import NotFound from "./components/NotFound";
 import ProgramPage from "./pages/Program";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
-import TermsAndConditionsPage from "./pages/TermsandConditions";
+import TermsAndConditionsPage from "./pages/TermsAndConditions";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import RefundPolicyPage from "./pages/RefundPolicy";
 
