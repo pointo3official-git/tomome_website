@@ -96,32 +96,6 @@ export const nav = {
   cta: "Download",
 };
 
-export const hero = {
-  heading1: "Your Baby Deserves",
-  heading2: "The Best Start",
-  primaryCta: "Book Free Demo",
-  secondaryCta: "Start Journey",
-  heroImage: "section/hero.png",
-  floatingCards: {
-    chat: {
-      name: `Anjana`,
-      time: "I gained 2.5 kg within one month 😊",
-    },
-    chat2: {
-      name: `Gifty`,
-      time: "Having a yoga trainer, nutrition, gynaecologist,and phycologist available troughout the journey has been such a blessing 💖",
-    },
-    chat3: {
-      name: `Keerthana`,
-      time: "Since i start yoga, i have experienced better sleep, reduced body pain and overall improvement in my wellbeing 🤍",
-    },
-    chat4: {
-      name: `Farha`,
-      time: "What I loved most about Tomome was that I never felt like I was going through pregnancy alone. Whenever I had a doubt or felt worried, there was someone to guide me and explain things clearly🥰",
-    },
-  },
-};
-
 export const featureSplit = {
   eyebrow: "FOR EVERY STAGE",
   heading: "Memories, wellness, and support way in one place",
@@ -154,55 +128,6 @@ export const partners = {
     // "leaf",
     // "flame",
     // "circle-dot",
-  ],
-};
-
-export const pricing = {
-  eyebrow: "PRICING & PLANS",
-  plans: [
-    {
-      name: "Free Starter",
-      tag: "7-day trial",
-      price: "$0.0",
-      note: "Trial access to all journal & voice basic features",
-      cta: "Start Free",
-      image:
-        "https://images.unsplash.com/photo-1544126592-807ade215a0b?q=80&w=800&auto=format&fit=crop",
-      features: [],
-      emphasized: false,
-    },
-    {
-      name: "Basic Plan",
-      tag: "Monthly",
-      price: "$16.99",
-      cta: "Get Basic Plan",
-      image:
-        "https://images.unsplash.com/photo-1522771930-78848d9293e8?q=80&w=800&auto=format&fit=crop",
-      features: [
-        "Daily memory journal",
-        "AI pregnancy assistant Ivyra",
-        "Personalized insights",
-        "Mood & symptom tracking",
-        "Smart weekly summaries",
-      ],
-      emphasized: false,
-    },
-    {
-      name: "Premium Plan",
-      tag: "Monthly",
-      price: "$28.99",
-      cta: "Get Premium Plan",
-      image:
-        "https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=800&auto=format&fit=crop",
-      features: [
-        "Everything in Basic Plan",
-        "Advanced AI wellness guidance",
-        "Unlimited voice memories",
-        "Family sharing access",
-        "Pregnancy milestone timeline",
-      ],
-      emphasized: true,
-    },
   ],
 };
 

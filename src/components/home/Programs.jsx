@@ -1,53 +1,6 @@
 import { motion } from 'motion/react';
 import { Check } from 'lucide-react';
-
-const programs = [
-  {
-    id: 'womb-care',
-    label: 'WOMB CARE PROGRAM',
-    title: 'Your Pregnancy, Your Journey',
-    description:
-      'Dedicated support to help you feel prepared, confident, and cared for throughout pregnancy.',
-    image:
-      'section/womb-care.jfif',
-    imageAlt: 'Mother and baby',
-    features: [
-      'Prepare For Baby Health & Birthing',
-      'Daily Live Yoga',
-      'Personalized Nutrition Support',
-      'Personalized Doctor Support',
-      'Unlimited Doubt Clearing Support',
-      'Childbirth classes & Labor preparation',
-      'Personalized Emotional Care',
-    ],
-    button: 'Know More',
-    href: '/program',
-    disabled: false,
-    highlighted: true,
-  },
-  {
-    id: 'super-parenting',
-    label: 'SUPER PARENTING PROGRAM',
-    title: 'For your path as a parent',
-    description:
-      'Ongoing support for the next chapter, helping you feel more confident as you step into parenthood.',
-    image:
-      'section/parenting.jfif',
-    imageAlt: 'Parent and child',
-    features: [
-      'Prepare for parenting',
-      'Daily Live Postpartum Yoga',
-      'Get the best nutrition advice',
-      'Lactation Coach support',
-      'Unlimited Doubt Clearing Support',
-      'DIY Activities',
-    ],
-    button: 'Coming Soon...',
-    href: '#',
-    disabled: true,
-    highlighted: false,
-  },
-];
+import { programs } from '../../data/home';
 
 export default function Programs() {
   return (

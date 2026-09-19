@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const HOW_ITEMS = [
   {

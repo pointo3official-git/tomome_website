@@ -1,49 +1,5 @@
 import { motion } from "motion/react";
-import {
-  Apple,
-  PersonStanding,
-  HeartHandshake,
-  BookOpen,
-  Brain,
-} from "lucide-react";
-
-const SUPPORT_ITEMS = [
-  {
-    key: "nutrition",
-    label: "Nutrition",
-    description: "Personalized nutrition guidance",
-    icon: Apple,
-    iconColor: "text-green-500",
-  },
-  {
-    key: "yoga",
-    label: "Prenatal Yoga",
-    description: "Daily movement & wellness",
-    icon: PersonStanding,
-    iconColor: "text-blue-500",
-  },
-  {
-    key: "support",
-    label: "Care Team",
-    description: "Expert support between visits",
-    icon: HeartHandshake,
-    iconColor: "text-rose-500",
-  },
-  {
-    key: "birth_class",
-    label: "Childbirth Classes",
-    description: "Prepare for birth with confidence",
-    icon: BookOpen,
-    iconColor: "text-yellow-600",
-  },
-  {
-    key: "emotional_support",
-    label: "Emotional Support",
-    description: "Psychologist support for your wellbeing",
-    icon: Brain,
-    iconColor: "text-purple-500",
-  },
-];
+import { SUPPORT_ITEMS } from "../../data/home";
 
 export default function PartnerOrbit() {
   return (

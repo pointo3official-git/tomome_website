@@ -14,7 +14,6 @@ export default function HomePage() {
       <PartnerOrbit />
       <Programs />
       <HowTomomeWorks />
-      {/* <Pricing /> */}
       <Testimonials />  
       <Footer />
     </div>

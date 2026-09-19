@@ -4,15 +4,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { testimonialsSection } from '../../data/content';
-
-const CATEGORY_LABELS = {
-  'birth-stories': 'Birth stories',
-  yoga: 'Yoga',
-  nutrition: 'Nutrition',
-  'dr-support': 'Doctor support',
-};
-
-const FILTERS = ['all', 'birth-stories', 'yoga', 'nutrition', 'dr-support'];
+import { CATEGORY_LABELS, FILTERS } from '../../data/home';
 
 function FeedbackCard({ feedback, isActive }) {
   return (
@@ -111,17 +103,6 @@ export default function Testimonials() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="flex items-center gap-4"
         >
-          {/* <div className="flex -space-x-3">
-            {testimonialsSection.avatarStack.map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt=""
-                className="h-9 w-9 rounded-full border-2 border-cream object-cover"
-              />
-            ))}
-          </div>
-          <p className="text-sm text-muted">{testimonialsSection.reviewCount}</p> */}
         </motion.div>
       </div>
 
