@@ -224,7 +224,7 @@ export default function ProgramEnquiry() {
             <p className="mt-6 text-sm leading-relaxed text-muted sm:text-base">
               Program starts at{" "}
               <span className="text-lg font-semibold text-ink sm:text-xl">
-                ₹ 2,999/mo
+                ₹ 1,999/mo
               </span>{" "}
               <span className="text-sm text-muted line-through sm:text-base">
                 ₹ 4,000/mo
