@@ -16,7 +16,7 @@ export const hero = {
   floatingCards: {
     chat: {
       name: `Anjana`,
-      time: "I gained 2.5 kg within one month 😊",
+      time: "Thank you for the breathing techniques it helped a lot 💖",
     },
     chat2: {
       name: `Gifty`,

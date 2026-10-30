@@ -72,51 +72,7 @@ export default function WhatsAppButton() {
       style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
     >
       {/* Notification bubble */}
-      <div
-        role="status"
-        aria-live="polite"
-        className={`relative w-[17rem] max-w-[calc(100vw-2rem)] origin-bottom-right rounded-2xl bg-white p-3 pr-9 shadow-xl ring-1 ring-black/5 transition-all duration-300 ${
-          showBubble
-            ? "translate-y-0 scale-100 opacity-100"
-            : "pointer-events-none translate-y-2 scale-95 opacity-0"
-        }`}
-      >
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeBubble}
-          className="flex items-start gap-3"
-        >
-          <Avatar />
-          <div className="min-w-0">
-            <p className="text-sm font-semibold text-gray-900">{AGENT_NAME}</p>
-            <p className="mt-0.5 text-sm leading-snug text-gray-600">
-              Hi 👋 Have any questions? Just send us a “Hi” on WhatsApp and
-              we’ll be happy to help!
-            </p>
-          </div>
-        </a>
-
-        {/* Close button (sibling of the link so clicks don't navigate) */}
-        <button
-          type="button"
-          onClick={closeBubble}
-          aria-label="Close message"
-          className="absolute right-2 top-2 flex h-6 w-6 items-center justify-center rounded-full text-gray-400 transition hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]"
-        >
-          <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor" aria-hidden="true">
-            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-          </svg>
-        </button>
-
-        {/* Little tail pointing at the icon */}
-        <span
-          className="absolute -bottom-1.5 right-6 h-3 w-3 rotate-45 bg-white ring-1 ring-black/5"
-          style={{ clipPath: "polygon(100% 0, 100% 100%, 0 100%)" }}
-          aria-hidden="true"
-        />
-      </div>
+  
 
       {/* Floating WhatsApp button */}
       <a
